@@ -1,0 +1,32 @@
+html {
+    /* Remove the background image */
+    /* background-image: url("background.webp"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input {
+    margin-bottom: 1.5em;
+    padding: 20px;
+    width: 100%;
+}
+
+input[type="email"] {    
+    margin-bottom: 1.5em;
+    padding: 20px;
+    padding: 2px solid red;
+    border-radius: 10px;
+}
+
+input[type="email"]:hover,
+input[type="email"]:focus {    
+    background-color: rgb(219, 219, 219);
+}
+
+input[type="reset"]:hover {
+    background-color: red !important;
+}
+
+input[type="submit"]:hover {
+    background-color: green !important;
+}
