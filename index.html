@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket System</title>
+    <link rel="stylesheet" href="CSS.css">
+    <style>
+        /* Add styles for the background video */
+        .background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+        /* Ensure content is above the video */
+        body {
+            position: relative;
+            z-index: 1;
+            background: none; /* Remove any background image */
+        }
+    </style>
+</head>
+<body>
+    <video class="background-video" loop autoplay muted>
+        <source src="Pyramaids.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li> <a href="attractions.html">Attractions</a> </li>
+                <li> <a href="music.html">Music</a> </li>
+                <li> <a href="food.html">Food</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Prepare your next trip with me</h1>
+        <p>Please fill in this form</p>
+        <form>
+            <div class="co">
+                <div>
+                    <label for="the-name">Full Name</label>
+                    <input type="text" name="name" id="name" required placeholder="Write a valid Name"> 
+                </div>
+                <div>
+                    <label for="the-email">Email</label>
+                    <input type="email" name="email" id="the-email" required placeholder="Write a valid Email address">
+                </div>
+                <div>
+                    <label for="phone-number">Phone number</label>
+                    <input type="tel" name="the-phone" id="the-phone" required placeholder="Write a valid Phone number">
+                </div>
+                <div>
+                    <label>Gender</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label class="inline-label" for="male">male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label class="inline-label" for="female">female</label>
+                </div>
+            </div>
+            <div>
+                <label for="date">Arrival Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                <label for="date">Departure Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                <label for="file">Profile Pic</label>
+                <input type="file" name="file" id="file">
+            </div>
+            <div>
+                <label for="file">Passport</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                <label for="file">Visa</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                <label for="Cities">Where you want to go</label>
+                <select name="Cities" id="Cities">
+                    <option value="Choose">Choose</option>
+                    <option value="luxor">Luxor</option>
+                    <option value="alexandria">Alexandria</option>
+                    <option value="Cairo">Cairo</option>
+                </select>
+            </div>
+            <div class="column">
+                <div>
+                    <label>Please check the services you need</label>
+                    <input type="checkbox" id="service1" name="service1" value="Flight">
+                    <label for="service1">Flight</label>
+                    <input type="checkbox" id="service2" name="service2" value="Hotel">
+                    <label for="service2">Hotel</label>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
